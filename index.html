@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="index-style.css">
     <title>文档标题</title>
 </head>
 
@@ -36,18 +36,26 @@
                     <div class="content-list-header">
                         <h4>捉鬼游戏</h4>
                     </div>
-                    <div class="content-list-slide" id="myCarousel"> 
-                    	<!-- 轮播（Carousel）指标 --> 
-                    		<input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden/>
-                    	    <label for="sildeInput1"></label>
-
-                    	    <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden/>
-                    	    <label for="sildeInput2"></label>
-
-                    	    <input type="radio" name="sildeInput" value="1" id="sildeInput3" hidden/>
-                    	    <label for="sildeInput3"></label>
-                    	    <!-- 轮播（Carousel）导航 -->
-                    	    <a class="carousel-nav"></a>
+                    <div class="content-list-slide" id="myCarousel">
+                        <!-- 轮播（Carousel）指标 -->
+                        <input type="radio" name="sildeInput" value="0" id="sildeInput1" checked hidden/>
+                        <input type="radio" name="sildeInput" value="1" id="sildeInput2" hidden/>
+                        <input type="radio" name="sildeInput" value="2" id="sildeInput3" hidden/>
+                        <div class="slider-pagination">
+                            <label for="sildeInput1" class="page1"></label>
+                            <label for="sildeInput2" class="page2"></label>
+                            <label for="sildeInput3" class="page3"></label>
+                        </div>
+                        <div class="next control">
+                            <label for="sildeInput1" class="numb1"></label>
+                            <label for="sildeInput2" class="numb2"></label>
+                            <label for="sildeInput3" class="numb3"></label>
+                        </div>
+                        <div class="previous control">
+                            <label for="sildeInput1" class="numb1"></label>
+                            <label for="sildeInput2" class="numb2"></label>
+                            <label for="sildeInput3" class="numb3"></label>
+                        </div>
                         <!-- 轮播（Carousel）项目 -->
                         <div class="content-inner">
                             <div class="item">
@@ -74,21 +82,21 @@
                                 b
                             </div>
                             <div class="item">
-                               c
+                                c
                             </div>
                         </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    </div>
     <script type="text/javascript">
-    	$(document).ready(function() {
-    		$(".carousel-nav").click(function(event) {
-    			
-    			
-    		});
-    	});
+    $(document).ready(function() {
+        $(".carousel-nav").click(function(event) {
+            $(".content-inner").css("transform", "translateX(-33.33333%)");
+
+        });
+    });
     </script>
 </body>
 
