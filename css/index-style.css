@@ -88,7 +88,7 @@ header {
 	top: 50%;
 	transform: translateY(-50%);
 	width: 12px; height: 20px;
-	background: url('image/index-assets/css_sprites.png') -80px -10px;
+	background: url('../image/index-assets/css_sprites.png') -80px -10px;
 	cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ input[name="sildeInput"] {
     display: none;
     width: 15px;
     height: 29px;
-    background: url('image/index-assets/css_sprites.png') -10px -10px;
+    background: url('../image/index-assets/css_sprites.png') -10px -10px;
     cursor: pointer;
 }
 
@@ -230,7 +230,7 @@ input[name="sildeInput"] {
     display: none;
     width: 15px;
     height: 29px;
-    background: url('image/index-assets/css_sprites.png') -45px -10px;
+    background: url('../image/index-assets/css_sprites.png') -45px -10px;
     cursor: pointer;
 }
 
