@@ -23,11 +23,6 @@ body {
     width: 100%;
 }
 
-h4 {
-    font-size: 0.
-}
-
-
 
 /*顶部header样式*/
 
@@ -76,6 +71,7 @@ header {
 }
 
 .content-title {
+	position: relative;
     padding: 0;
     height: 0.6rem;
 }
@@ -85,6 +81,15 @@ header {
     line-height: 0.6rem;
     text-align: center;
     color: #9a9a9a;
+}
+.bg-Back {
+	position: absolute;
+	right: 0.2rem;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 12px; height: 20px;
+	background: url('image/index-assets/css_sprites.png') -80px -10px;
+	cursor: pointer;
 }
 
 .content-list .row {
