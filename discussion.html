@@ -23,6 +23,9 @@
         </div>
         <div class="header-sign">
             <h5>发言讨论结束，大家请投票 <span class="bg-play"></span></h5>
+            <audio class="play" src="image/财富自由.mp3" >
+                <source src="image/财富自由.mp3" >
+            </audio>
 
         </div>
         <div class="sign-info">点击得票数最多的人的头像</div>
@@ -150,8 +153,34 @@
        
     </main>
     <footer>
-        <button>投死</button>
+        <button class="vote">投死</button>
     </footer>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var audio = $('audio')[0];
+        $('.bg-play').click(function(event) {
+            /* Act on the event */
+          
+            if (audio.paused) {
+                audio.play();
+               
+            }else{
+                audio.pause();
+               
+            }
+        });
+
+        $(".vote").click(function(event) {
+            /* Act on the event */
+            $(location).attr('href', 'result.html');
+        });
+
+
+
+    });
+</script>
 
 </body>
 </html>
